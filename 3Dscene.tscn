@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://dib67o6vhpj83"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/brackeys-proto-controller-main/proto_controller/proto_controller.tscn" id="1_g24i5"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4c444"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_biqlu"]
+sky_material = SubResource("ProceduralSkyMaterial_4c444")
+
+[sub_resource type="Environment" id="Environment_l70q0"]
+background_mode = 2
+sky = SubResource("Sky_biqlu")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Scene" type="Node" unique_id=533425786]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1100717790]
+environment = SubResource("Environment_l70q0")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1743255808]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Node3D" type="Node3D" parent="." unique_id=405416711]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="Node3D" unique_id=2004444157]
+use_collision = true
+
+[node name="Floor" type="CSGBox3D" parent="Node3D/CSGCombiner3D" unique_id=1767820829]
+size = Vector3(50, 1, 50)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Node3D/CSGCombiner3D" unique_id=2011505648]
+size = Vector3(10, 10, 10)
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="Node3D/CSGCombiner3D/CSGBox3D" unique_id=331737424]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.7757287, 1.295557, 0)
+operation = 2
+radius = 1.619
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Node3D/CSGCombiner3D/CSGBox3D" unique_id=552997813]
+operation = 2
+size = Vector3(9, 9, 9)
+
+[node name="ProtoController" parent="Node3D" unique_id=1931970740 instance=ExtResource("1_g24i5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.442914, 0, 0)
