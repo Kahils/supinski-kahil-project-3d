@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dqu61lk6ylnx8"]
+
+[ext_resource type="PackedScene" uid="uid://bpdrjkk68hk3e" path="res://assets/brackeys_3d_game_assets/dungeon_assets/building/floor_stone.glb" id="1_3h5we"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qr8ql"]
+size = Vector3(4, 0.15656738, 4)
+
+[node name="Stone Floor" type="StaticBody3D" unique_id=1298504317]
+
+[node name="floor_stone" parent="." unique_id=1575589665 instance=ExtResource("1_3h5we")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2098898114]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9604645e-08, -0.02171629, -5.9604645e-08)
+shape = SubResource("BoxShape3D_qr8ql")

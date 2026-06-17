@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bblccj7r4suk1"]
+
+[ext_resource type="PackedScene" uid="uid://cqy3gqic358pr" path="res://assets/brackeys_3d_game_assets/dungeon_assets/props/plate_food.glb" id="1_yw5hl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vbdlw"]
+size = Vector3(1, 0.7, 0.8)
+
+[node name="Food Plate" type="StaticBody3D" unique_id=743042772]
+
+[node name="plate_food" parent="." unique_id=287986158 instance=ExtResource("1_yw5hl")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=685403954]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35000005, -0.099999994)
+shape = SubResource("BoxShape3D_vbdlw")

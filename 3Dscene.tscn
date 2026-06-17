@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dib67o6vhpj83"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/brackeys-proto-controller-main/proto_controller/proto_controller.tscn" id="1_g24i5"]
+[ext_resource type="PackedScene" uid="uid://6lkl45jhvy3q" path="res://assets/brackeys_3d_game_assets/dungeon_assets/scenes/Building/mounted_torch.tscn" id="2_4c444"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4c444"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -28,6 +29,10 @@ shadow_enabled = true
 
 [node name="OmniLight3D" type="OmniLight3D" parent="DirectionalLight3D" unique_id=1080168585]
 transform = Transform3D(1, -2.9802322e-08, -4.4703484e-08, 2.9802322e-08, 1, 2.9802322e-08, 4.4703484e-08, 2.9802322e-08, 1, 7.640375, 12.457225, -6.1458607)
+light_color = Color(0.93319726, 0.82748616, 0.40614516, 1)
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="DirectionalLight3D" unique_id=1946167364]
+transform = Transform3D(1, -2.9802322e-08, -4.4703484e-08, 2.9802322e-08, 1, 2.9802322e-08, 7.4505806e-08, 5.9604645e-08, 1, 7.6403766, 14.240366, -3.0573685)
 light_color = Color(0.93319726, 0.82748616, 0.40614516, 1)
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="DirectionalLight3D" unique_id=1697412600]
@@ -153,5 +158,13 @@ transform = Transform3D(0.9204644, 0, -0.39082837, 0, 1, 0, 0.3908276, 0, 0.9204
 operation = 2
 size = Vector3(0.54296875, 0.62646484, 0.3299408)
 
+[node name="CSGBox3D2" type="CSGBox3D" parent="Node3D/CSGCombiner3D/CSGCylinder3D8" unique_id=1523582211]
+transform = Transform3D(0.92685074, 0, -0.37543285, 0, 1, 0, 0.3754318, 0, 0.9268527, -0.32122254, 0.53584343, -0.14796096)
+operation = 2
+size = Vector3(0.28857422, 0.37109375, 0.18945313)
+
 [node name="ProtoController" parent="Node3D" unique_id=1931970740 instance=ExtResource("1_g24i5")]
 transform = Transform3D(0.17051908, 0, 0.9853543, 0, 1, 0, -0.9853543, 0, 0.17051908, -6.5664644, 0, 18.070696)
+
+[node name="Mounted Torch" parent="." unique_id=870061539 instance=ExtResource("2_4c444")]
+transform = Transform3D(0.018167824, 0, 0.999835, 0, 1, 0, -0.999835, 0, 0.018167824, -14.718846, 2.3718193, 22.40803)

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c562hwu42oqp8"]
+
+[ext_resource type="PackedScene" uid="uid://87lu65veoh07" path="res://assets/brackeys_3d_game_assets/dungeon_assets/building/ceiling.glb" id="1_hpjve"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fibdh"]
+size = Vector3(3.9909973, 0.58691406, 3.997467)
+
+[node name="Ceiling" type="StaticBody3D" unique_id=89963241]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1213223814]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0005340576, 0.20654297, 1.5258789e-05)
+visible = false
+shape = SubResource("BoxShape3D_fibdh")
+
+[node name="ceiling" parent="." unique_id=880610446 instance=ExtResource("1_hpjve")]
