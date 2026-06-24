@@ -27,6 +27,7 @@
 [ext_resource type="PackedScene" uid="uid://b22sknagpmf1b" path="res://assets/brackeys_3d_game_assets/dungeon_assets/scenes/Props/sword_shield.tscn" id="25_grhfb"]
 [ext_resource type="PackedScene" uid="uid://dxwch117a2blo" path="res://assets/brackeys_3d_game_assets/dungeon_assets/scenes/Props/small_table.tscn" id="26_jor1e"]
 [ext_resource type="PackedScene" uid="uid://dwdycavu10wt5" path="res://assets/brackeys_3d_game_assets/dungeon_assets/scenes/Props/keys.tscn" id="27_h3h4a"]
+[ext_resource type="PackedScene" uid="uid://biofamf2yyjmk" path="res://assets/my_assets/Monkey.glb" id="28_fl2vk"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4c444"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -550,3 +551,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.679593, 0.5579829, 16.878
 
 [node name="Keys" parent="." unique_id=419773649 instance=ExtResource("27_h3h4a")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.680124, 1.5564357, 17.035046)
+
+[node name="Monkey2" parent="." unique_id=1249305334 instance=ExtResource("28_fl2vk")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -11.418766, 8.510153, 12.289491)
+
+[node name="Monkey3" parent="." unique_id=1914049992 instance=ExtResource("28_fl2vk")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 7.5745516, 1.4843752, 15.492105)
