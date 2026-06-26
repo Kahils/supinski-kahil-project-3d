@@ -28,6 +28,7 @@
 [ext_resource type="PackedScene" uid="uid://dxwch117a2blo" path="res://assets/brackeys_3d_game_assets/dungeon_assets/scenes/Props/small_table.tscn" id="26_jor1e"]
 [ext_resource type="PackedScene" uid="uid://dwdycavu10wt5" path="res://assets/brackeys_3d_game_assets/dungeon_assets/scenes/Props/keys.tscn" id="27_h3h4a"]
 [ext_resource type="PackedScene" uid="uid://biofamf2yyjmk" path="res://assets/my_assets/Monkey.glb" id="28_fl2vk"]
+[ext_resource type="PackedScene" uid="uid://2ncxgn7iaws4" path="res://assets/my_assets/Barrel.glb" id="29_wfgdw"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4c444"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -198,8 +199,8 @@ transform = Transform3D(0.95900786, 0, 0.28337935, 0, 1, 0, -0.28337935, 0, 0.95
 [node name="Coins" parent="Node3D" unique_id=531613976 instance=ExtResource("22_4h6y6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.728093, 8.3446455, 11.4448185)
 
-[node name="Coins2" parent="Node3D" unique_id=754483769 instance=ExtResource("22_4h6y6")]
-transform = Transform3D(0.04801294, 0, -0.9988467, 0, 1, 0, 0.9988467, 0, 0.04801294, -13.212692, 8.325895, 11.519394)
+[node name="Coins2" parent="Node3D" unique_id=1452972548 instance=ExtResource("22_4h6y6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.286526, 10.337913, 11.844774)
 
 [node name="Candles17" parent="Node3D" unique_id=1592225312 instance=ExtResource("19_wfgdw")]
 transform = Transform3D(-0.49342582, 0, -0.8697879, 0, 1, 0, 0.8697879, 0, -0.49342582, -11.375558, 8.331171, 11.740095)
@@ -557,3 +558,39 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -11.
 
 [node name="Monkey3" parent="." unique_id=1914049992 instance=ExtResource("28_fl2vk")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 7.5745516, 1.4843752, 15.492105)
+
+[node name="Barrel2" parent="." unique_id=1666583266 instance=ExtResource("29_wfgdw")]
+transform = Transform3D(0.6269473, 0, 0, 0, 0.69676775, 0, 0, 0, 0.6099484, 4.057251, 1.21134, 10.1616335)
+
+[node name="Barrel3" parent="." unique_id=249473549 instance=ExtResource("29_wfgdw")]
+transform = Transform3D(0.65524745, 0, 0, 0, 0.65524745, 0, 0, 0, 0.65524745, -13.610806, 1.1867045, 23.96439)
+
+[node name="Barrel4" parent="." unique_id=426155749 instance=ExtResource("29_wfgdw")]
+transform = Transform3D(0.65524745, 0, 0, 0, 0.65524745, 0, 0, 0, 0.65524745, -11.899483, 1.1867045, 23.958382)
+
+[node name="Barrel5" parent="." unique_id=1241836877 instance=ExtResource("29_wfgdw")]
+transform = Transform3D(0.65524745, 0, 0, 0, 0.65524745, 0, 0, 0, 0.65524745, -9.472501, 1.1867045, 11.754506)
+
+[node name="Barrel8" parent="." unique_id=161618781 instance=ExtResource("29_wfgdw")]
+transform = Transform3D(0.65524745, 0, 0, 0, 0.65524745, 0, 0, 0, 0.65524745, -9.472501, 1.1867045, 7.7949533)
+
+[node name="Barrel10" parent="." unique_id=1891277913 instance=ExtResource("29_wfgdw")]
+transform = Transform3D(0.42783174, -3.7402238e-08, 0.49629542, -5.7283547e-08, -0.6552474, 0, 0.49629542, -4.3387523e-08, -0.42783174, -13.202627, 1.1867045, 7.7949533)
+
+[node name="Barrel9" parent="." unique_id=612447623 instance=ExtResource("29_wfgdw")]
+transform = Transform3D(-2.8641773e-08, -0.6552474, 0, 0.6552474, -2.8641773e-08, 0, 0, 0, 0.6552474, -11.288866, 1.1867045, 7.7949533)
+
+[node name="Barrel11" parent="." unique_id=848168949 instance=ExtResource("29_wfgdw")]
+transform = Transform3D(-2.8641773e-08, -0.6552474, 0, 0.6552474, -2.8641773e-08, 0, 0, 0, 0.6552474, -22.673529, 6.2106905, -10.815152)
+
+[node name="Barrel12" parent="." unique_id=1243163741 instance=ExtResource("29_wfgdw")]
+transform = Transform3D(2.5272737e-08, 0.57817286, 0.30832657, 0.6552474, -2.8641772e-08, 0, 1.3477382e-08, 0.30832657, -0.57817286, -21.148937, 6.2106905, -10.815152)
+
+[node name="Barrel6" parent="." unique_id=146035586 instance=ExtResource("29_wfgdw")]
+transform = Transform3D(0.65524745, 0, 0, 0, 0.65524745, 0, 0, 0, 0.65524745, -9.472501, 2.2624402, 11.754506)
+
+[node name="Barrel7" parent="." unique_id=1228079268 instance=ExtResource("29_wfgdw")]
+transform = Transform3D(0.65524745, 0, 0, 0, 0.65524745, 0, 0, 0, 0.65524745, -9.472501, 3.4053032, 11.754506)
+
+[node name="Barrel13" parent="." unique_id=275751747 instance=ExtResource("29_wfgdw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.262162, 9.348749, 11.928242)
